@@ -14,5 +14,8 @@ $('document').ready(function(){
 		var couleur = monBouton.attr('data-color');
 		monBouton.css('background-color', couleur);
 	}
+	boutons.click(function(){
+		$('body').css('background-color', $(this).attr('data-color'));
 
+	});
 });
