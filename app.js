@@ -15,7 +15,14 @@ $('document').ready(function(){
 		monBouton.css('background-color', couleur);
 	}
 	boutons.click(function(){
-		$('body').css('background-color', $(this).attr('data-color'));
+		var estCochee = $('#modify-texte').is(':checked')
+		var couleur = $(this).attr('data-color');
+		if(estCochee){
+			$('body').css('color', couleur);
+		}else{
+			$('body').css('background-color', couleur);
+		}
+		
 
 	});
 });
