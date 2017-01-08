@@ -14,6 +14,7 @@ $('document').ready(function(){
 		var couleur = monBouton.attr('data-color');
 		monBouton.css('background-color', couleur);
 	}
+	// Déclarer un gestionnaire d'évènement (sur le click)
 	boutons.click(function(){
 		var estCochee = $('#modify-texte').is(':checked')
 		var couleur = $(this).attr('data-color');
